@@ -15,9 +15,9 @@ function solution(s1, s2) {
       // loop s2Array
       for (let j =0; j < s2Array.length; j++) {
           if (s1Array[i] === s2Array[j]) {
-              // add commmon char + s1 + s2 location to commonChars set
+              // add common char + s1 + s2 location to commonChars set
               commonChars.add(`${s1Array[i]}${j}`);
-              // avoid compare twice same letter at s2
+              // avoid compare twice same character at s2
               s2Array[j] = 0;
               // break to next s1 letter to compare with the rest of s2 letters
               break;   
